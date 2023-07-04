@@ -13,12 +13,10 @@ export class App extends Component {
       { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
     ],
     filter: '',
-    name: '',
-    number: '',
   };
 
-  loginInputId = nanoid();
-  numberInputId = nanoid();
+  // loginInputId = nanoid();
+  // numberInputId = nanoid();
 
   handleChange = e => {
     const { name, value } = e.target;
@@ -57,11 +55,9 @@ export class App extends Component {
       <div style={{ marginLeft: '10px' }}>
         <h1>Phonebook</h1>
         <ContactForm
-          loginInputId={this.loginInputId}
-          numberInputId={this.numberInputId}
+          // loginInputId={this.loginInputId}
+          // numberInputId={this.numberInputId}
           btnHandle={this.handleSubmit}
-          number={this.state.number}
-          name={this.state.name}
           handleChange={this.handleChange}
         />
         <h2>Contacts</h2>
